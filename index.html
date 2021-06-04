@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="./app.js"  defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900" rel="stylesheet">
+    <link rel="icon" href="./CD.png" type="image/x-icon">
+</head>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand text-danger" href=""><h3>Covie-Data</h3></a>
+    <button class="navbar-toggler text-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav text-dark text-right  ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://covie-data.netlify.app/index.html"><h4>Home</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://covie-data.netlify.app/data.html"><h4>Covid-19 Data</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://covie-data.netlify.app/vaccine.html"><h4>Vaccine Portal</h4></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="https://covie-data.netlify.app/id.html"><h4>Id's</h4></a>
+          </li>
+          <li class="nav-item  active">
+            <a class="nav-link text-dark" href=""><h4>Dashboard</h4></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-dark" href="https://covie-data.netlify.app/about.html"><h4>About</h4></a>
+          </li>
+        
+      </ul>
+    </div>
+  </nav>
+<body onload="noifx()">
+    <div class="content">
+    <div id="chartContainer" style="height: 500px; width: 100%"></div>
+    <div id="chartContainerWorld" style="height: 400px; width: 100%"></div>
+    <div id="chartContainerWorldDialy" style="height: 500px; width: 100%"></div>
+    <div id="chartContainerCountriesDialy" style="height: 500px; width: 100%"></div>
+    <div id="chartContainerIndiaHistory" style="height: 500px; width: 100%"></div>
+</div>
+   <style>
+       .content{
+           margin-top:50px;
+       }
+       #chartContainerWorld{
+           margin-top: 100px;
+       }
+       #chartContainerWorldDialy{
+        margin-top: 100px;
+       }
+       #chartContainerCountriesDialy{
+        margin-top: 100px;
+       }
+       #chartContainerIndiaHistory{
+        margin-top: 100px;
+       }
+       h1,  h3, h4, h5{
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+span{
+    color: rgb(0, 0, 0);
+}
+.navbar{
+    
+}
+.navbar h3{
+    text-decoration:underline;
+    font-style:oblique;
+}
+   </style>
+   
+   
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
